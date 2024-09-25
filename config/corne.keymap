@@ -17,11 +17,6 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-
-        L3 {
-            bindings = <&mo 3>;
-            key-positions = <37 40>;
-        };
     };
 
     behaviors {
@@ -108,6 +103,15 @@
 &trans        &trans        &trans        &trans        &trans        &trans    &trans      &trans  &trans  &trans  &trans   &trans
                                           &trans        &trans        &trans    &trans      &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        L3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
