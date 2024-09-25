@@ -17,6 +17,11 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        L3 {
+            bindings = <&mo 3>;
+            key-positions = <37 40>;
+        };
     };
 
     behaviors {
